@@ -38,7 +38,7 @@ with open(FILENAME, 'r', errors='ignore') as f:
 						case '*':
 							result = int(mathline[1])*int(mathline[3])
 						case '/':
-							result = int(mathline[1])/int(mathline[3])
+							result = int(mathline[1])//int(mathline[3])
 					if result is not None:
 						print(mathline[1], mathline[2], mathline[3])
 						print(result, "\n")
